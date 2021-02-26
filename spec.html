@@ -25,8 +25,8 @@
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand"
           ><img
-            src="https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/car.png"
-            class="img-fluid"
+            src="img/carman_logo.png"
+            class="img-fluid navbar-brand_img"
             alt=""
         /></a>
         <div class="hamburger">
@@ -379,31 +379,31 @@
     <script src="js/progresscircle.js"></script>
     <script>
       // Get the current year for the copyright
-      $('#year').text(new Date().getFullYear());
+      $("#year").text(new Date().getFullYear());
       // sticky nav
-      $('.js--sticky-nav').waypoint(
+      $(".js--sticky-nav").waypoint(
         function (direction) {
-          if (direction == 'down') {
-            $('nav').addClass('sticky');
+          if (direction == "down") {
+            $("nav").addClass("sticky");
           } else {
-            $('nav').removeClass('sticky');
+            $("nav").removeClass("sticky");
           }
         },
         {
-          offset: '25%',
+          offset: "25%",
         }
       );
       //circle progress
       $(function () {
-        $('.circlechart').circlechart();
+        $(".circlechart").circlechart();
       });
       // responsive nav
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('.navbar-nav');
-      const links = document.querySelectorAll('.nav-item');
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".navbar-nav");
+      const links = document.querySelectorAll(".nav-item");
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
       });
     </script>
   </body>

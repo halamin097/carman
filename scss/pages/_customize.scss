@@ -1,0 +1,135 @@
+.customize-header {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: linear-gradient(
+    to bottom,
+    #2c3e50,
+    #505050
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 50vh;
+  margin-top: -10rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  h1 {
+    color: $white;
+    font-size: $second-font;
+    transform: translateY(5rem);
+  }
+}
+.cc-section-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/home_car_section_bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0rem;
+  .accordion-title {
+    margin-bottom: 3.5rem;
+    h3 {
+      font-size: $second-font;
+    }
+  }
+  .accordion {
+    .card {
+      border: 0rem;
+      border-left: 1px #ebebeb solid !important;
+      border-radius: 0rem;
+      .card-header {
+        border-bottom: 0rem;
+        box-shadow: inset 0px 4px 3px -2px rgba(0, 0, 0, 0.04);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 0.813rem;
+        padding: 1rem 1.75rem !important;
+        cursor: pointer;
+        color: #5a5a5a;
+        .fas {
+          padding-right: 1.5rem;
+        }
+      }
+      .card-body {
+        .cb-title {
+          font-size: 1.5rem;
+        }
+        .cb-text {
+          font-size: $small-font;
+          font-family: 'Open Sans', sans-serif;
+        }
+        .cb-icon-text {
+          div {
+            margin-bottom: 1rem;
+            color: #666666;
+          }
+          .fas {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+/*cc Section Two*/
+.cc-section-two {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/home_car_section_bg2.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5rem;
+  .cc-two-content {
+    .cc-two-title {
+      h3 {
+        font-size: $second-font;
+      }
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: $small-font;
+      }
+    }
+    .cc-two-cards {
+      .card {
+        border-radius: 0rem;
+        .card-body {
+          text-align: center;
+          h5 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-family: 'Open Sans', sans-serif;
+            font-family: $small-font;
+          }
+          a {
+            color: $primary;
+            font-family: 'Open Sans', sans-serif;
+          }
+          a:hover {
+            color: #e4b638;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
+/*cc Section Three*/
+.cc-section-three {
+  padding-bottom: 6rem;
+  padding-top: 5rem;
+  .cc-three-content {
+    text-align: center;
+    h3 {
+      font-size: $second-font;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      font-family: 'Open Sans', sans-serif;
+      color: #757575;
+      margin-bottom: 2rem !important;
+    }
+    .btn-mine {
+      padding: 0.55rem 1rem;
+    }
+  }
+}

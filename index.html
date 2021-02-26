@@ -31,8 +31,8 @@
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand"
           ><img
-            src="https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/car.png"
-            class="img-fluid"
+            src="img/carman_logo.png"
+            class="img-fluid navbar-brand_img"
             alt=""
         /></a>
         <div class="hamburger">
@@ -120,7 +120,7 @@
               class="slider-img img-fluid"
             />
           </a>
-          <a href="#"><p>Lorem, ipsum dolor.</p></a>
+          <a href="#" class="slider_caption"><p>Lorem, ipsum dolor.</p></a>
         </div>
         <div>
           <a href="#">
@@ -130,7 +130,7 @@
               class="slider-img img-fluid"
             />
           </a>
-          <a href="#"><p>Lorem, ipsum dolor.</p></a>
+          <a href="#" class="slider_caption"><p>Lorem, ipsum dolor.</p></a>
         </div>
         <div>
           <a href="#"
@@ -139,7 +139,7 @@
               alt="missing"
               class="slider-img img-fluid"
           /></a>
-          <a href="#">
+          <a href="#" class="slider_caption">
             <p>Lorem, ipsum dolor.</p>
           </a>
         </div>
@@ -151,7 +151,7 @@
               class="slider-img img-fluid"
             />
           </a>
-          <a href="#"><p>Lorem, ipsum dolor.</p></a>
+          <a href="#" class="slider_caption"><p>Lorem, ipsum dolor.</p></a>
         </div>
         <div>
           <a href="#">
@@ -171,7 +171,7 @@
               class="slider-img img-fluid"
             />
           </a>
-          <a href="#"><p>Lorem, ipsum dolor.</p></a>
+          <a href="#" class="slider_caption"><p>Lorem, ipsum dolor.</p></a>
         </div>
       </div>
     </div>
@@ -364,7 +364,7 @@
                   height: 100%;
                 "
                 frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
+                allow="fullscreen; picture-in-picture"
                 allowfullscreen
               ></iframe>
             </div>
@@ -397,22 +397,22 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script>
       // Get the current year for the copyright
-      $('#year').text(new Date().getFullYear());
+      $("#year").text(new Date().getFullYear());
       // sticky nav
-      $('.js--sticky-nav').waypoint(
+      $(".js--sticky-nav").waypoint(
         function (direction) {
-          if (direction == 'down') {
-            $('nav').addClass('sticky');
+          if (direction == "down") {
+            $("nav").addClass("sticky");
           } else {
-            $('nav').removeClass('sticky');
+            $("nav").removeClass("sticky");
           }
         },
         {
-          offset: '25%',
+          offset: "25%",
         }
       );
       //init slick slider
-      $('.slider').slick({
+      $(".slider").slick({
         dots: true,
         infinite: true,
         autoplay: true,
@@ -448,12 +448,12 @@
         ],
       });
       // responsive nav
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('.navbar-nav');
-      const links = document.querySelectorAll('.nav-item');
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".navbar-nav");
+      const links = document.querySelectorAll(".nav-item");
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
       });
     </script>
   </body>
