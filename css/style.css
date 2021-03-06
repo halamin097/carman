@@ -526,15 +526,26 @@ body {
     transform: translateY(5rem); }
 
 .cc-section-one {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/home_car_section_bg1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   padding: 10rem 0rem; }
+  .cc-section-one::after {
+    content: "";
+    background: url(https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/home_car_section_bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: -1;
+    opacity: 0.5; }
   .cc-section-one .accordion-title {
     margin-bottom: 3.5rem; }
     .cc-section-one .accordion-title h3 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      position: relative; }
   .cc-section-one .accordion .card {
     border: 0rem;
     border-left: 1px #ebebeb solid !important;
@@ -563,13 +574,24 @@ body {
 
 /*cc Section Two*/
 .cc-section-two {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/home_car_section_bg2.jpg);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
   padding-bottom: 5rem; }
+  .cc-section-two::after {
+    content: "";
+    background: url(https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/home_car_section_bg2.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: -1;
+    opacity: 0.5; }
   .cc-section-two .cc-two-content .cc-two-title h3 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    position: relative; }
   .cc-section-two .cc-two-content .cc-two-title p {
     font-family: "Open Sans", sans-serif;
     font-size: 0.938rem; }
@@ -608,7 +630,11 @@ body {
 
 /**specification page**/
 .spec-header {
-  margin-top: -10rem; }
+  margin-top: -10rem;
+  background-image: url(https://themes.muffingroup.com/be/car/wp-content/uploads/2016/05/home_car_car_specification.jpg);
+  height: 90vh;
+  background-position: center center;
+  background-size: cover; }
 
 .cs-section-title h3 {
   font-size: 3rem; }
@@ -814,7 +840,10 @@ Query
       margin-bottom: 2rem; }
 
   .pfq {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+
+  .spec-header {
+    height: 50vh; } }
 @media (max-width: 778px) {
   .hero-content {
     padding: 0rem !important;
@@ -822,10 +851,10 @@ Query
     width: 60% !important;
     margin: auto; }
 
-  .cc-section-one {
+  .cc-section-one::after {
     background-position: right !important; }
 
-  .cc-section-two {
+  .cc-section-two::after {
     background-position: left !important; }
 
   .cc-two-cards h5 {
@@ -877,5 +906,4 @@ Query
 
   .hero-content {
     padding: 0rem !important;
-    padding-bottom: 5rem !important;
     width: 80% !important; } }
